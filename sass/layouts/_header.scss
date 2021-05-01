@@ -8,13 +8,14 @@
     
     @media (min-resolution:192dpi) and (min-width:37.5em),(min-width: 125em){
         background-image: linear-gradient(to right bottom, #5543faa0, #2998ffa0), url("../img/hero-bali.jpg");
+        
     }
 
    
 
 
     @include respond(phone) {
-        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
 
     }
 
