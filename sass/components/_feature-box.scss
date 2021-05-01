@@ -19,6 +19,7 @@
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         display: inline-block;
         -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
 
         @include respond(tab-port) {

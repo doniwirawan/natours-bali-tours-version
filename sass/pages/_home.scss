@@ -10,14 +10,14 @@
 
 .section-features {
     padding: 20rem 0;
-    background-image: linear-gradient(to right bottom, #7ed56fc3, #28b485b1),
+    background-image: linear-gradient(to right bottom, #2998ff9e, #5543faaa),
         url("../img/nat-4.jpg");
     background-size: cover;
-    transform: skewY(-7deg);
+    transform: skewY(7deg);
     margin-top: -11.5rem;
 
     &>* {
-        transform: skewY(7deg);
+        transform: skewY(-7deg);
     }
 
     @include respond(tab-port) {
