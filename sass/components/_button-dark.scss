@@ -1,0 +1,42 @@
+.button-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 10rem;
+	position: fixed;
+	right: 5.5rem;
+	bottom: 1rem;
+	z-index: 999;
+	// background: rgb(143, 143, 143);
+	border-radius: 20px;
+	@include respond(tab-port) {
+		right: 2rem;
+		height: 9rem;
+	}
+
+	&__button {
+		outline: none;
+		border: none;
+		border-radius: 50%;
+		width: 4rem;
+		height: 4rem;
+		box-shadow: 0 1.5rem 4rem rgba($color-black, 0.3);
+		cursor: pointer;
+		transition: all 0.1s;
+		&:hover {
+			// transform: scale(0.9);
+		}
+		&:active {
+			transform: scale(0.2);
+			transform: translateY(8px);
+		}
+		&--dark {
+			background-color: rgb(19, 19, 19);
+			border: 2px solid rgb(232, 232, 232);
+		}
+		&--light {
+			background-color: rgb(240, 240, 240);
+			border: 2px solid rgb(167, 167, 167);
+		}
+	}
+}
